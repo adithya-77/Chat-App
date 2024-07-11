@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="129dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/face" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/e_mail"
+        android:layout_below="@id/logo"
+        android:hint="Email"
+        android:background="@drawable/backgrnd"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/pass"
+        android:layout_height="50dp"
+        android:layout_below="@id/e_mail"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/backgrnd"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:layout_marginLeft="100dp"
+        android:text="Login"
+        android:id="@+id/login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:layout_marginLeft="210dp"
+        android:text="SignUp"
+        android:id="@+id/signup"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        />
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/signup"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+</RelativeLayout>
